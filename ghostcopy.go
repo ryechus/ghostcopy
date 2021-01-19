@@ -1,3 +1,4 @@
+// ghostcopy copies a directory and its subtree to a new directory where all directories and files have zero bytes
 package main
 
 import (
@@ -9,7 +10,7 @@ import (
 )
 
 func usageDocs() {
-	fmt.Printf("usage: %s source destination\n", os.Args[0])
+	fmt.Printf("usage: %s [-w working_dir] source destination\n", os.Args[0])
 }
 
 func main() {
